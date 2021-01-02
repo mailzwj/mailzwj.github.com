@@ -20,14 +20,20 @@
         var len = repos.length;
         if ('HTMLPortalElement' in window) {
             for (var x = 0; x < len; x++) {
+                var repo = repos[x] || {};
                 var div = document.createElement('div');
                 var item = document.createElement('portal');
+                var link = document.createElement('a');
                 var ct = `width: ${winWidth}px;height: ${(winWidth / itemWidth) * 108}px;`;
                 ct += `${transPrefix}transform-origin: left top;${transPrefix}transform: scale(${itemWidth / winWidth});`;
                 div.className = 'njv-portal';
-                item.src = `//newjs.vip/${repos[x].name}`;
+                link.className = 'njv-portal-link';
+                link.href = `//newjs.vip/${repo.name}`;
+                link.setAttribute('target', '_blank');
+                item.src = `//newjs.vip/${repo.name}`;
                 item.style.cssText = ct;
                 div.appendChild(item);
+                div.appendChild(link);
                 box.appendChild(div);
             }
         } else {
