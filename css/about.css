@@ -16,7 +16,13 @@
 }
 
 .njv-about .njv-portal {
+    border: 1px solid #f5f7f9;
     height: 108px;
+}
+
+.njv-about .njv-portal portal {
+    outline: none;
+    cursor: pointer;
 }
 
 .njv-about .njv-item {
