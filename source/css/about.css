@@ -1,0 +1,33 @@
+.njv-about {
+    display: flex;
+    flex: 1 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.njv-about .njv-portal,
+.njv-about .njv-item {
+    margin-bottom: 10px;
+    width: 24%;
+    max-width: 24%;
+    border-radius: 3px;
+    background-color: #f5f7f9;
+}
+
+.njv-about .njv-portal {
+    height: 108px;
+}
+
+.njv-about .njv-item {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.njv-about .njv-item:hover {
+    border-bottom-color: #ccc;
+}
