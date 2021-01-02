@@ -33,6 +33,7 @@
                 item.src = `//newjs.vip/${repo.name}`;
                 item.style.cssText = ct;
                 div.appendChild(item);
+                div.appendChild(link);
                 box.appendChild(div);
             }
         } else {
