@@ -16,6 +16,7 @@
 }
 
 .njv-about .njv-portal {
+    position: relative;
     border: 1px solid #f5f7f9;
     height: 108px;
 }
@@ -23,6 +24,16 @@
 .njv-about .njv-portal portal {
     outline: none;
     cursor: pointer;
+}
+
+.njv-about .njv-portal .njv-portal-link {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: none;
 }
 
 .njv-about .njv-item {
