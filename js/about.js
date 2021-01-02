@@ -33,7 +33,14 @@
     axios.get(repoApi).then(function(res) {
         return res.data || [];
     }).then(function(data) {
-        myRepos(data);
+        myRepos = data;
         renderRepos(data);
     });
+
+    window.addEventListener('reset', () => {
+        if (myRepos.length) {
+            box.innerHTML = '';
+            renderRepos(myRepos);
+        }
+    }, false);
 })();
