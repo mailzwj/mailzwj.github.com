@@ -15,6 +15,22 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 640px) {
+    .njv-about .njv-portal,
+    .njv-about .njv-item {
+        width: calc(50% - 8px);
+        min-width: calc(50% - 8px);
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+    .njv-about .njv-portal,
+    .njv-about .njv-item {
+        width: calc(33% - 8px);
+        min-width: calc(33% - 8px);
+    }
+}
+
 .njv-about .njv-portal {
     position: relative;
     border: 1px solid #f5f7f9;
